@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover amazing food portfolios and culinary creations. Your ultimate food showcase platform.">
+    <title>FoodFolio - Ultimate Food Portfolio Platform</title>
+    
+    <!-- Google Fonts - Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <span class="logo-text">Food<span class="logo-highlight">Folio</span></span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#popular" class="nav-link">Popular</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="btn-icon search-toggle" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn-primary">Get Started</button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Premium Food Portfolio Platform</span>
+                </div>
+                <h1 class="hero-title">
+                    Discover Your Next
+                    <span class="gradient-text">Culinary</span>
+                    <span class="gradient-text">Masterpiece</span>
+                </h1>
+                <p class="hero-description">
+                    Explore stunning food portfolios, connect with passionate creators, and showcase your culinary artistry to the world. Join thousands of food enthusiasts today.
+                </p>
+                
+                <!-- Search Bar -->
+                <div class="hero-search">
+                    <div class="search-container">
+                        <i class="fas fa-map-marker-alt search-icon"></i>
+                        <input type="text" class="search-input location-input" placeholder="Enter your location">
+                        <div class="search-divider"></div>
+                        <i class="fas fa-utensils search-icon"></i>
+                        <input type="text" class="search-input food-input" placeholder="Search for food, cuisine, or creator">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                            <span>Search</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Quick Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="10000">0</div>
+                        <div class="stat-label">Food Items</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5000">0</div>
+                        <div class="stat-label">Creators</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50000">0</div>
+                        <div class="stat-label">Happy Users</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-fire"></i>
+                    <span>Trending Now</span>
+                </div>
+                <h2 class="section-title">Featured <span class="gradient-text">Collections</span></h2>
+                <p class="section-description">Handpicked culinary masterpieces from our top creators</p>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="featured-card featured-large" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80" alt="Gourmet Pizza" loading="lazy">
+                        <div class="featured-overlay">
+                            <div class="featured-badge-top">
+                                <i class="fas fa-crown"></i>
+                                <span>Premium</span>
+                            </div>
+                            <div class="featured-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">Artisan Pizza Collection</h3>
+                        <p class="featured-description">Hand-crafted pizzas with premium ingredients</p>
+                        <div class="featured-meta">
+                            <div class="creator">
+                                <img src="https://i.pravatar.cc/150?img=12" alt="Chef Marco">
+                                <span>Chef Marco</span>
+                            </div>
+                            <div class="featured-action">
+                                <button class="btn-icon-small like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-icon-small">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Gourmet Salad" loading="lazy">
+                        <div class="featured-overlay">
+                            <div class="featured-badge-top health">
+                                <i class="fas fa-leaf"></i>
+                                <span>Healthy</span>
+                            </div>
+                            <div class="featured-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">Fresh Bowl Series</h3>
+                        <p class="featured-description">Nutritious and delicious salad bowls</p>
+                        <div class="featured-meta">
+                            <div class="creator">
+                                <img src="https://i.pravatar.cc/150?img=25" alt="Chef Sarah">
+                                <span>Chef Sarah</span>
+                            </div>
+                            <div class="featured-action">
+                                <button class="btn-icon-small like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-icon-small">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&q=80" alt="Gourmet Burger" loading="lazy">
+                        <div class="featured-overlay">
+                            <div class="featured-badge-top bestseller">
+                                <i class="fas fa-trophy"></i>
+                                <span>Bestseller</span>
+                            </div>
+                            <div class="featured-rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3 class="featured-title">Ultimate Burger Bar</h3>
+                        <p class="featured-description">Juicy burgers with signature sauces</p>
+                        <div class="featured-meta">
+                            <div class="creator">
+                                <img src="https://i.pravatar.cc/150?img=33" alt="Chef Alex">
+                                <span>Chef Alex</span>
+                            </div>
+                            <div class="featured-action">
+                                <button class="btn-icon-small like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="btn-icon-small">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-th-large"></i>
+                    <span>Browse by Type</span>
+                </div>
+                <h2 class="section-title">Popular <span class="gradient-text">Categories</span></h2>
+                <p class="section-description">Find exactly what you're craving</p>
+            </div>
+            
+            <div class="category-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Categories</button>
+                <button class="filter-btn" data-filter="cuisine">Cuisine</button>
+                <button class="filter-btn" data-filter="meal">Meal Type</button>
+                <button class="filter-btn" data-filter="diet">Dietary</button>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-category="cuisine" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="category-icon">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div>
+                    <h3 class="category-title">Italian</h3>
+                    <p class="category-count">2,500+ items</p>
+                    <div class="category-hover">
+                        <button class="btn-secondary">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="cuisine" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="category-icon">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <h3 class="category-title">Asian</h3>
+                    <p class="category-count">3,200+ items</p>
+                    <div class="category-hover">
+                        <button class="btn-secondary">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="meal" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="category-icon">
+                        <i class="fas fa-hamburger"></i>
+                    </div>
+                    <h3 class="category-title">Fast Food</h3>
+                    <p class="category-count">1,800+ items</p>
+                    <div class="category-hover">
+                        <button class="btn-secondary">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="diet" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="category-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="category-title">Vegan</h3>
+                    <p class="category-count">1,500+ items</p>
+                    <div class="category-hover">
+                        <button class="btn-secondary">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="meal" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="category-icon">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <h3 class="category-title">Desserts</h3>
+                    <p class="category-count">2,100+ items</p>
+                    <div class="category-hover">
+                        <button class="btn-secondary">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="cuisine" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="category-icon">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <h3 class="category-title">Mexican</h3>
+                    <p class="category-count">1,900+ items</p>
+                    <div class="category-hover">
+                        <button class="btn-secondary">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="meal" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="category-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3 class="category-title">Beverages</h3>
+                    <p class="category-count">1,200+ items</p>
+                    <div class="category-hover">
+                        <button class="btn-secondary">Explore</button>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="diet" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="category-icon">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <h3 class="category-title">Seafood</h3>
+                    <p class="category-count">1,600+ items</p>
+                    <div class="category-hover">
+                        <button class="btn-secondary">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Items Section -->
+    <section class="popular" id="popular">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Most Popular</span>
+                </div>
+                <h2 class="section-title">Trending <span class="gradient-text">This Week</span></h2>
+                <p class="section-description">Top-rated dishes loved by our community</p>
+            </div>
+            
+            <div class="popular-grid">
+                <div class="popular-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="popular-image">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80" alt="Sushi Platter" loading="lazy">
+                        <div class="popular-badge">
+                            <i class="fas fa-fire"></i>
+                            <span>Hot</span>
+                        </div>
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="popular-content">
+                        <div class="popular-header">
+                            <h3 class="popular-title">Premium Sushi Platter</h3>
+                            <div class="popular-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <p class="popular-description">Fresh, authentic Japanese sushi with premium ingredients</p>
+                        <div class="popular-tags">
+                            <span class="tag">Japanese</span>
+                            <span class="tag">Seafood</span>
+                            <span class="tag">Premium</span>
+                        </div>
+                        <div class="popular-footer">
+                            <div class="creator-mini">
+                                <img src="https://i.pravatar.cc/150?img=15" alt="Chef Yuki">
+                                <span>Chef Yuki</span>
+                            </div>
+                            <button class="btn-icon-small like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>234</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="popular-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="popular-image">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Pasta Carbonara" loading="lazy">
+                        <div class="popular-badge bestseller">
+                            <i class="fas fa-crown"></i>
+                            <span>Best</span>
+                        </div>
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="popular-content">
+                        <div class="popular-header">
+                            <h3 class="popular-title">Creamy Carbonara</h3>
+                            <div class="popular-rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <p class="popular-description">Traditional Italian pasta with rich creamy sauce</p>
+                        <div class="popular-tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Pasta</span>
+                            <span class="tag">Comfort</span>
+                        </div>
+                        <div class="popular-footer">
+                            <div class="creator-mini">
+                                <img src="https://i.pravatar.cc/150?img=22" alt="Chef Giovanni">
+                                <span>Chef Giovanni</span>
+                            </div>
+                            <button class="btn-icon-small like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>456</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="popular-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="popular-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80" alt="Healthy Bowl" loading="lazy">
+                        <div class="popular-badge health">
+                            <i class="fas fa-heart"></i>
+                            <span>Healthy</span>
+                        </div>
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="popular-content">
+                        <div class="popular-header">
+                            <h3 class="popular-title">Power Buddha Bowl</h3>
+                            <div class="popular-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <p class="popular-description">Nutrient-rich bowl packed with superfoods</p>
+                        <div class="popular-tags">
+                            <span class="tag">Vegan</span>
+                            <span class="tag">Healthy</span>
+                            <span class="tag">Bowl</span>
+                        </div>
+                        <div class="popular-footer">
+                            <div class="creator-mini">
+                                <img src="https://i.pravatar.cc/150?img=30" alt="Chef Emma">
+                                <span>Chef Emma</span>
+                            </div>
+                            <button class="btn-icon-small like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>389</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="popular-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="popular-image">
+                        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&q=80" alt="Burger Deluxe" loading="lazy">
+                        <div class="popular-badge">
+                            <i class="fas fa-fire"></i>
+                            <span>Hot</span>
+                        </div>
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="popular-content">
+                        <div class="popular-header">
+                            <h3 class="popular-title">Signature Burger</h3>
+                            <div class="popular-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <p class="popular-description">Gourmet burger with special house sauce</p>
+                        <div class="popular-tags">
+                            <span class="tag">Burger</span>
+                            <span class="tag">American</span>
+                            <span class="tag">Gourmet</span>
+                        </div>
+                        <div class="popular-footer">
+                            <div class="creator-mini">
+                                <img src="https://i.pravatar.cc/150?img=40" alt="Chef Mike">
+                                <span>Chef Mike</span>
+                            </div>
+                            <button class="btn-icon-small like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>512</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer" data-aos="fade-up">
+                <button class="btn-outline-large">
+                    <span>View All Popular Items</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-comments"></i>
+                    <span>What People Say</span>
+                </div>
+                <h2 class="section-title">User <span class="gradient-text">Reviews</span></h2>
+                <p class="section-description">Hear from our amazing community</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "This platform completely transformed how I showcase my culinary work. The interface is stunning and my portfolio looks incredibly professional!"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/150?img=1" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Professional Chef</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "As a food photographer, I needed a platform that could showcase my work beautifully. FoodFolio exceeded all my expectations!"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/150?img=8" alt="Michael Chen">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>Food Photographer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The best food portfolio platform I've used! Easy to navigate, beautiful design, and it helped me land several clients."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/150?img=5" alt="Emma Williams">
+                            <div class="author-info">
+                                <h4>Emma Williams</h4>
+                                <p>Culinary Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Incredible platform! The community is supportive, the features are top-notch, and it's helped me grow my food business."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/150?img=14" alt="David Martinez">
+                            <div class="author-info">
+                                <h4>David Martinez</h4>
+                                <p>Restaurant Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="contact">
+        <div class="container">
+            <div class="newsletter-content" data-aos="zoom-in">
+                <div class="newsletter-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h2 class="newsletter-title">Stay Updated with <span class="gradient-text">FoodFolio</span></h2>
+                <p class="newsletter-description">
+                    Subscribe to our newsletter and get the latest updates, featured portfolios, and exclusive offers delivered to your inbox.
+                </p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn-primary-large">
+                            <span>Subscribe Now</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="form-note">
+                        <i class="fas fa-lock"></i>
+                        We respect your privacy. Unsubscribe anytime.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <span class="logo-text">Food<span class="logo-highlight">Folio</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Your ultimate platform for showcasing culinary excellence and discovering amazing food portfolios from around the world.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Pinterest">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#popular">Popular</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">For Creators</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Create Portfolio</a></li>
+                        <li><a href="#">Upload Content</a></li>
+                        <li><a href="#">Creator Guidelines</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 FoodFolio. All rights reserved. Designed with <i class="fas fa-heart"></i> for food lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
